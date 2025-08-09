@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxrent</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="home dark-block">
+      <div class="container">
+        <header>
+          <a href="#"
+            ><img src="images/logo.svg" alt="Logo" class="header__logo"
+          /></a>
+          <nav class="header__links">
+            <a href="#" class="header__link">О нас</a>
+            <a href="#" class="header__link">Почему мы?</a>
+            <a href="#" class="header__link">Этапы работы</a>
+            <a href="#" class="header__link">Инвестирование</a>
+            <a href="#" class="header__link">Контакты</a>
+          </nav>
+          <a href="tel:+371 20-440-882" class="header__phone-container">
+            <img
+              src="images/phone.svg"
+              alt="Phone icon"
+              class="header__phone-icon"
+            />
+            <p class="header__phone-number">+371 20-440-882</p>
+          </a>
+        </header>
+        <div class="home__content">
+          <h2 class="home__title">
+            Инвестируйте<br />
+            в контейнеры от 5 000 €<br />
+            с возвратом 15-17% в год
+          </h2>
+          <ul class="home__list">
+            <li class="home__list-item">
+              <img
+                src="images/home/home-icon-1.svg"
+                alt="Contract icon"
+                class="home__list-item-icon"
+              />
+              <p class="home__list-item-text">
+                Физический контейнер в Вашей собственности
+              </p>
+            </li>
+            <li class="home__list-item">
+              <img
+                src="images/home/home-icon-2.svg"
+                alt="Contract icon"
+                class="home__list-item-icon"
+              />
+              <p class="home__list-item-text">
+                Инвестируйте в компанию которая имеет 200+ активных арендаторов
+                и управляет активами в размере 300 000 € +
+              </p>
+            </li>
+            <li class="home__list-item">
+              <img
+                src="images/home/home-icon-3.svg"
+                alt="Contract icon"
+                class="home__list-item-icon"
+              />
+              <p class="home__list-item-text">
+                Средняя заполняемость складов выше 85%*
+              </p>
+            </li>
+          </ul>
+          <button class="home__btn feedback-btn">
+            Получить коммерческое предложение
+          </button>
+        </div>
+      </div>
+      <div class="home__img-container">
+        <img
+          src="images/container-1.png"
+          alt="Container image"
+          class="home__img img-no-drag"
+        />
+      </div>
+    </section>
+    <section class="calc">
+      <div class="container">
+        <h1 class="calc__title block-title">Рассчитайте свою прибыль!</h1>
+        <div class="calc__calc">
+          <div class="calc__math-items">
+            <div class="calc__math-item">
+              <p class="calc__math-name">Ваша инвестиция</p>
+              <div class="calc__math-value">8000 €</div>
+              <div class="calc__math-progress">
+                <input
+                  class="calc__progress-bar"
+                  type="range"
+                  id="calcProgressBar"
+                  value="8000"
+                  min="8000"
+                  max="40000"
+                />
+                <div class="calc__pregress-values">
+                  <p class="calc__pregress-value">8000 €</p>
+                  <p class="calc__pregress-value">40000 €</p>
+                </div>
+              </div>
+            </div>
+            <div class="calc__math-item">
+              <p class="calc__math-name">В вашей собственности</p>
+              <div class="calc__math-value">1 конт.</div>
+              <div class="calc__math-progress">
+                <input
+                  class="calc__progress-bar"
+                  type="range"
+                  id="calcProgressBar"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <div class="calc__pregress-values">
+                  <p class="calc__pregress-value">1 конт.</p>
+                  <p class="calc__pregress-value">10 конт.</p>
+                </div>
+              </div>
+            </div>
+            <div class="calc__math-item">
+              <p class="calc__math-name">Ваша доходность (в год)</p>
+              <div class="calc__math-value">10.5 %</div>
+              <div class="calc__math-progress">
+                <input
+                  class="calc__progress-bar"
+                  type="range"
+                  id="calcProgressBar"
+                  value="10.5"
+                  min="10.5"
+                  max="12"
+                />
+                <div class="calc__pregress-values">
+                  <p class="calc__pregress-value">10.5 %</p>
+                  <p class="calc__pregress-value">12 %</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calc__results-container">
+            <h4 class="calc__result-title">
+              Ваш пассивный<br />
+              доход
+            </h4>
+            <div class="calc__results">
+              <div class="calc__result">
+                <p class="calc__result-name">В месяц:</p>
+                <p class="calc__result-value">129 €</p>
+              </div>
+              <div class="calc__result">
+                <p class="calc__result-name">В год:</p>
+                <p class="calc__result-value">1 550 €</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <img
+          src="images/container-photo.png"
+          alt="Container photo"
+          class="about-us__img"
+        />
+        <div class="about-us__text-content">
+          <h1 class="about-us__title block-title">
+            Чем занимается<br />
+            Boxrent ?
+          </h1>
+          <ul class="about-us__list">
+            <li class="about-us__list-item">
+              Мы управляющая компания. Мы строим склады из морских контейнеров и
+              сдаем в короткий и долгий срок.
+            </li>
+            <li class="about-us__list-item">
+              Мы открыли первую локацию в Риге 06.2020 и за 2 года вырасли до
+              одной из лидирующих компаний в Балтии по хранению вещей в
+              контейнерах.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="dynamics">
+      <div class="container">
+        <h1 class="dynamics__title block-title">Динамика развития</h1>
+        <div class="dynamics__stages">
+          <div class="dynamics__stage">
+            <div class="dynamics__stage-container">
+              <img
+                src="images/one-container.svg"
+                alt="One container"
+                class="dynamics__stage-img"
+              />
+              <div class="dynamics__stage-description">
+                <div class="dynamics__stage-date">05. 2020</div>
+                <ul class="dynamics__stage-list">
+                  <li class="dynamics__stage-list-item">1 контейнер</li>
+                  <li class="dynamics__stage-list-item">6 клиентов</li>
+                </ul>
+                <div class="dynamics__stage-locations">
+                  <img
+                    src="images/location-grey-icon.svg"
+                    alt="Location"
+                    class="dynamics__stage-locations-img"
+                  />
+                  <p class="dynamics__stage-locations-names">Рига</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dynamics__stage">
+            <div class="dynamics__stage-container">
+              <img
+                src="images/three-containers.svg"
+                alt="Three container"
+                class="dynamics__stage-img"
+              />
+              <div class="dynamics__stage-description">
+                <div class="dynamics__stage-date">05. 2021</div>
+                <ul class="dynamics__stage-list">
+                  <li class="dynamics__stage-list-item">20 контейнер</li>
+                  <li class="dynamics__stage-list-item">90 клиентов</li>
+                </ul>
+                <div class="dynamics__stage-locations">
+                  <img
+                    src="images/location-grey-icon.svg"
+                    alt="Location"
+                    class="dynamics__stage-locations-img"
+                  />
+                  <p class="dynamics__stage-locations-names">Рига</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dynamics__stage">
+            <div class="dynamics__stage-container">
+              <img
+                src="images/six-containers.svg"
+                alt="Six container"
+                class="dynamics__stage-img"
+              />
+              <div class="dynamics__stage-description">
+                <div class="dynamics__stage-date">04. 2022</div>
+                <ul class="dynamics__stage-list">
+                  <li class="dynamics__stage-list-item">58 контейнеров</li>
+                  <li class="dynamics__stage-list-item">200+ клиентов</li>
+                </ul>
+                <div class="dynamics__stage-locations">
+                  <img
+                    src="images/location-grey-icon.svg"
+                    alt="Location"
+                    class="dynamics__stage-locations-img"
+                  />
+                  <p class="dynamics__stage-locations-names">Рига | Вильнюс</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dynamics__stage last">
+            <div class="dynamics__stage-container">
+              <img
+                src="images/nine-containers.svg"
+                alt="Nine container"
+                class="dynamics__stage-img"
+              />
+              <div class="dynamics__stage-description">
+                <div class="dynamics__stage-date">05. 2023</div>
+                <ul class="dynamics__stage-list">
+                  <li class="dynamics__stage-list-item">200 контейнер</li>
+                  <li class="dynamics__stage-list-item">1000 клиентов</li>
+                </ul>
+                <div class="dynamics__stage-locations">
+                  <img
+                    src="images/location-white-icon.svg"
+                    alt="Location"
+                    class="dynamics__stage-locations-img"
+                  />
+                  <p class="dynamics__stage-locations-names">
+                    Рига | Вильню | Каунас | Таплин
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="locations">
+      <div class="container">
+        <h3 class="locations__title block-title">
+          Наши контейнеры расположены<br />
+          в 8 разных локаций
+        </h3>
+        <div class="locations__items">
+          <div class="locations__item">
+            <iframe
+              loading="lazy"
+              src="https://snazzymaps.com/embed/288597"
+              zoom="10"
+              width="100%"
+              height="100%"
+              style="border: none"
+            ></iframe>
+          </div>
+          <div class="locations__item">
+            <iframe
+              loading="lazy"
+              src="https://snazzymaps.com/embed/358020"
+              zoom="10"
+              width="100%"
+              height="100%"
+              style="border: none"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h1 class="advantages__title block-title">
+          Почему нас выбрали<br />
+          уже более 200 клиентов?
+        </h1>
+        <div class="advantages__content">
+          <div class="advantages__slider-container">
+            <div class="advantages__slider-border"></div>
+            <div class="advantages__slider">
+              <div class="advantages__slide">
+                <img src="images/slider/image 1.png" alt="Slide 1" />
+              </div>
+              <div class="advantages__slide">
+                <img src="images/slider/image 2.png" alt="Slide 2" />
+              </div>
+              <div class="advantages__slide">
+                <img src="images/slider/image 3.png" alt="Slide 3" />
+              </div>
+              <div class="advantages__slide">
+                <img src="images/slider/image 4.png" alt="Slide 4" />
+              </div>
+            </div>
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
+              <img
+                src="images/drop.svg"
+                alt="Drop icon"
+                class="advantages__list-item-img"
+              />
+              <p class="advantages__list-item-name">Сухо и герметично</p>
+            </li>
+            <li class="advantages__list-item">
+              <img
+                src="images/electricity.svg"
+                alt="Electricity icon"
+                class="advantages__list-item-img"
+              />
+              <p class="advantages__list-item-name">
+                Электричество и освещение
+              </p>
+            </li>
+            <li class="advantages__list-item">
+              <img
+                src="images/shield.svg"
+                alt="Shield icon"
+                class="advantages__list-item-img"
+              />
+              <p class="advantages__list-item-name">Безопасно</p>
+            </li>
+            <li class="advantages__list-item">
+              <img
+                src="images/сlock.svg"
+                alt="Clock icon"
+                class="advantages__list-item-img"
+              />
+              <p class="advantages__list-item-name">Доступ 24/7</p>
+            </li>
+            <li class="advantages__list-item">
+              <img
+                src="images/car.svg"
+                alt="Car icon"
+                class="advantages__list-item-img"
+              />
+              <p class="advantages__list-item-name">Удобный подьезд</p>
+            </li>
+            <li class="advantages__list-item">
+              <img
+                src="images/euro.svg"
+                alt="Euro icon"
+                class="advantages__list-item-img"
+              />
+              <p class="advantages__list-item-name">Выгодно</p>
+            </li>
+            <li class="advantages__list-item">
+              <img
+                src="images/camera.svg"
+                alt="Camera icon"
+                class="advantages__list-item-img"
+              />
+              <p class="advantages__list-item-name">
+                Видеонаблюдение и физическая охрана
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="scheme dark-block">
+      <div class="container">
+        <h2 class="scheme__title">
+          Контейнер <span>Boxrent</span> - отличное<br />
+          решение для хранения вещей
+        </h2>
+        <div class="scheme__scheme">
+          <img
+            src="images/scheme.png"
+            alt="Scheme"
+            class="scheme__scheme-img img-no-drag"
+          />
+          <div class="scheme__points">
+            <div class="scheme__point-border scheme__point scheme__point--1">
+              <div class="scheme__point-background">
+                <img
+                  src="images/plus.svg"
+                  alt="Plus"
+                  class="scheme__point-img"
+                />
+              </div>
+            </div>
+            <div class="scheme__point-popup scheme__point-popup--1">
+              <p class="scheme__point-popup-text">
+                Мы красим контейнер антикоррозийной грунтовой краской
+              </p>
+            </div>
+            <div class="scheme__point-border scheme__point scheme__point--2">
+              <div class="scheme__point-background">
+                <img
+                  src="images/plus.svg"
+                  alt="Plus"
+                  class="scheme__point-img"
+                />
+              </div>
+            </div>
+            <div class="scheme__point-popup scheme__point-popup--2">
+              <p class="scheme__point-popup-text">
+                Стенки контейнера изготовлены из прочного 2мм метала. Контейнер
+                полностью герметичный что не позволяет проникнуть влаге, а также
+                грызунам на склад.
+              </p>
+            </div>
+            <div class="scheme__point-border scheme__point scheme__point--3">
+              <div class="scheme__point-background">
+                <img
+                  src="images/plus.svg"
+                  alt="Plus"
+                  class="scheme__point-img"
+                />
+              </div>
+            </div>
+            <div class="scheme__point-popup scheme__point-popup--3">
+              <p class="scheme__point-popup-text">
+                К каждому складу монтируем дополнительные вентиляции чтобы даже
+                в самую жаркую погоду не накапливался конденсат
+              </p>
+            </div>
+            <div class="scheme__point-border scheme__point scheme__point--4">
+              <div class="scheme__point-background">
+                <img
+                  src="images/plus.svg"
+                  alt="Plus"
+                  class="scheme__point-img"
+                />
+              </div>
+            </div>
+            <div class="scheme__point-popup scheme__point-popup--4">
+              <p class="scheme__point-popup-text">
+                Конструкция морского контейнера очень прочная и надежная.
+                Контейнер 40фт позволяет вместить груз до общей массы до 26.7
+                тонн
+              </p>
+            </div>
+            <div class="scheme__point-border scheme__point scheme__point--5">
+              <div class="scheme__point-background">
+                <img
+                  src="images/plus.svg"
+                  alt="Plus"
+                  class="scheme__point-img"
+                />
+              </div>
+            </div>
+            <div class="scheme__point-popup scheme__point-popup--5">
+              <p class="scheme__point-popup-text">
+                Размеры 40фт контейнер: 12,2 x 2,4 x 2,6м (длина x ширина x
+                высота). Внутренняя площадь составляет 28.4 м2
+              </p>
+            </div>
+            <div class="scheme__point-border scheme__point scheme__point--6">
+              <div class="scheme__point-background">
+                <img
+                  src="images/plus.svg"
+                  alt="Plus"
+                  class="scheme__point-img"
+                />
+              </div>
+            </div>
+            <div class="scheme__point-popup scheme__point-popup--6">
+              <p class="scheme__point-popup-text">
+                Двери контейнера очень прочные, каждая из них весит 90 кг и
+                имеет 2 вертикальные механизмы закрывание
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="container">
+        <h1 class="steps__title block-title">Как мы работаем?</h1>
+        <div class="steps__items">
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №1</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-1.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">
+              Анализ рынка<br />
+              и тестирование<br />
+              спроса
+            </h5>
+            <p class="steps__item-text">
+              Перед открытием новой локации, мы ее тщательно анализируем, а
+              также тестируем реальный спрос
+            </p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №2</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-2.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">
+              Поиск<br />
+              территории
+            </h5>
+            <p class="steps__item-text">
+              Мы ищем землю в выбранных районах и заключаем долгосрочный договор
+              аренды от ≈ 2 до 5 лет
+            </p>
+            <a href="#" class="steps__item-question">У вас есть территория?</a>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №3</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-3.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">
+              Предложение<br />
+              инвесторам
+            </h5>
+            <p class="steps__item-text">
+              Рассылаем актуальное предложение инвесторам по входу в новую
+              локацию
+            </p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №4</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-4.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">
+              Производство<br />
+              складов
+            </h5>
+            <p class="steps__item-text">
+              Изготовления дверей, поставка и переоборудования контейнеров как
+              правило занимает до 30 дней
+            </p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №5</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-5.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">Маркетинг</h5>
+            <p class="steps__item-text">
+              Паралельно производству начинаем рекламировать новую локацию. Мы
+              используем все возможные ресурсы для привлечения новых клиентов
+            </p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №6</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-6.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">
+              Заполнения новых<br />
+              контейнеров
+            </h5>
+            <p class="steps__item-text">
+              В зависимости от количеств контейнеров, в среднем первую группу
+              контейнеров заполняем до 75% за 45 дней
+            </p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №7</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-7.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">
+              Выплата процентов<br />
+              инвесторам
+            </h5>
+            <p class="steps__item-text">
+              Инвестор начинает получать проценты уже за второй месяц работы вне
+              зависимости от заполняемости наших контейнеров!
+            </p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-head">
+              <p class="steps__item-number">ШАГ №8</p>
+              <img
+                src="images/steps/step-arrow.svg"
+                alt="Стрелка"
+                class="steps__item-arrow"
+              />
+            </div>
+            <img
+              src="images/steps/step-icon-8.svg"
+              alt="Анализ рынка"
+              class="steps__item-icon"
+            />
+            <h5 class="steps__item-title">
+              Строительство новых<br />
+              складов
+            </h5>
+            <p class="steps__item-text">
+              Как только локация заполняется до 75%, высылаем предложение
+              инвесторам и строим новые склады
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="investment">
+      <div class="container">
+        <h1 class="investment__title block-title">
+          Как происходит<br />
+          инвестирование?
+        </h1>
+        <div class="investment__content-container">
+          <div class="investment__description">
+            <img
+              src="images/investment.png"
+              alt="Инвестиции"
+              class="investment__img"
+            />
+            <h5 class="investment__description-title">
+              Процентная ставка считается от общего количества контейнеров у
+              одного инвестора
+            </h5>
+            <div class="investment__example">
+              <img
+                src="images/quotation-marks.svg"
+                alt="Кавычки"
+                class="investment__example-icon"
+              />
+              <div>
+                <h6 class="investment__example-title">Например</h6>
+                <p class="investment__example-text">
+                  Купив 1 контейнер, возврат = 15%, через год ещё докупив 1
+                  контейнер, возврат нового контейнера = 15,5%, через ещё 2 года
+                  докупив 2 контейнера, возврат 16%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="investment__overview">
+            <div class="investment__stages">
+              <div class="investment__stage">
+                <div class="investment__stage-number">1</div>
+                <div class="investment__stage-text">
+                  После одобрения число контейнеров и локации, по вашему
+                  желанию, мы присылаем фото контейнеров
+                </div>
+              </div>
+              <div class="investment__stage">
+                <div class="investment__stage-number">2</div>
+                <div class="investment__stage-text">
+                  Мы заключаем договор купли-продажи контейнера и сразу же
+                  договор долгосрочной аренды, и Вы перечисляете средства
+                </div>
+              </div>
+              <div class="investment__stage">
+                <div class="investment__stage-number">3</div>
+                <div class="investment__stage-text">
+                  Вы получаете первую прибыль
+                  <span>уже за второй месяц работы</span> вне зависимости от
+                  заполняемости
+                </div>
+              </div>
+            </div>
+            <table class="investment__table">
+              <thead>
+                <th class="investment__table-column-title">
+                  <h5>Кол. контейнеров</h5>
+                </th>
+                <th class="investment__table-column-title">
+                  <h5>Возврат в год</h5>
+                </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>15%</td>
+                </tr>
+                <tr class="investment__table-row--2">
+                  <td>2-3</td>
+                  <td>15,5%</td>
+                </tr>
+                <tr>
+                  <td>4-5</td>
+                  <td>16%</td>
+                </tr>
+                <tr class="investment__table-row--4">
+                  <td>6-9</td>
+                  <td>16,5%</td>
+                </tr>
+                <tr>
+                  <td>10+</td>
+                  <td>17%</td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="investment__btn feedback-btn">
+              Получить коммерческое предложение
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="liquid-asset">
+      <div class="container">
+        <h1 class="liquid-asset__title block-title">
+          У вас в собственности <br /><span>ликвидный актив</span>
+        </h1>
+        <div class="liquid-asset__features">
+          <div class="liquid-asset__feature liquid-asset__feature--1">
+            <div class="liquid-asset__feature-head">
+              <img
+                src="images/liquid-asset-feature/feature-1.svg"
+                alt="ID"
+                class="liquid-asset__feature-icon"
+              />
+              <h5 class="liquid-asset__feature-name">
+                Каждый контейнер<br />
+                имеет свой ID
+              </h5>
+            </div>
+            <p class="liquid-asset__feature-text">
+              У каждого контейнера внутри и снаруже свой уникальный ID. В
+              договоре купли-продажи мы вписываем этот номер.
+            </p>
+          </div>
+          <div class="liquid-asset__feature liquid-asset__feature--2">
+            <div class="liquid-asset__feature-head">
+              <img
+                src="images/liquid-asset-feature/feature-2.svg"
+                alt="Деньги"
+                class="liquid-asset__feature-icon"
+              />
+              <h5 class="liquid-asset__feature-name">Можно продать</h5>
+            </div>
+            <p class="liquid-asset__feature-text">
+              Если у Вас поменялись планы, Вы можете предложить выкупить
+              контейнер у нас. Мы предложим выкуп другим инвесторам или
+              рассмотрим покупку сами.
+            </p>
+          </div>
+          <div class="liquid-asset__feature liquid-asset__feature--3">
+            <div class="liquid-asset__feature-head">
+              <img
+                src="images/liquid-asset-feature/feature-3.svg"
+                alt="Местоположение"
+                class="liquid-asset__feature-icon"
+              />
+              <h5 class="liquid-asset__feature-name">
+                Вы знаете точное<br />
+                расположение<br />
+                контейнера
+              </h5>
+            </div>
+            <p class="liquid-asset__feature-text">
+              Мы ставим контейнер на территорию которой адрес указан в договоре
+              аренды между нами и вами. Мы не меняем эту локацию и у Вас есть
+              доступ к этой территории
+            </p>
+          </div>
+          <div class="liquid-asset__feature liquid-asset__feature--4">
+            <div class="liquid-asset__feature-head">
+              <img
+                src="images/liquid-asset-feature/feature-4.svg"
+                alt="Видеонаблюдения"
+                class="liquid-asset__feature-icon"
+              />
+              <h5 class="liquid-asset__feature-name">
+                Видеонаблюдения<br />
+                на территории
+              </h5>
+            </div>
+            <p class="liquid-asset__feature-text">
+              Мы оснащаем наши склады 24/7 видеонаблюдением. Мы вам даем доступ
+              к камерам углы которых попадают ваши контейнеры
+            </p>
+          </div>
+          <div class="liquid-asset__feature liquid-asset__feature--5">
+            <div class="liquid-asset__feature-head">
+              <img
+                src="images/liquid-asset-feature/feature-5.svg"
+                alt="Высокий спрос"
+                class="liquid-asset__feature-icon"
+              />
+              <h5 class="liquid-asset__feature-name">
+                Высокий спрос<br />
+                на контейнеры
+              </h5>
+            </div>
+            <p class="liquid-asset__feature-text">
+              Активно развивается контейнерское строительство. Порочные
+              конструкции контейнера переделывают в дома, офисы, торговые точки
+              и склады
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/app-on-phone.png"
+        alt="Приложение для просмотра камер видеонаблюдения со смартфона"
+        class="liquid-asset__img img-no-drag"
+      />
+    </section>
+    <section class="pension dark-block">
+      <div class="container">
+        <h1 class="pension__title block-title">Пожизненная пенсия</h1>
+        <p class="pension__text">
+          Получайте поссивный доход всю жизнь, потому-что:
+        </p>
+        <div class="pension__items">
+          <div class="pension__item pension__item--1">
+            <div class="pension__item-container">
+              <img
+                src="images/check-mark.svg"
+                alt="Галочка"
+                class="pension__item-icon"
+              />
+              <p class="pension__item-text">
+                Мы работаем в антикризисной сфере
+              </p>
+            </div>
+          </div>
+          <div class="pension__item pension__item--2">
+            <div class="pension__item-container">
+              <img
+                src="images/check-mark.svg"
+                alt="Галочка"
+                class="pension__item-icon"
+              />
+              <p class="pension__item-text">
+                Наша точка безубыточности по отношению к заполняемости низка - у
+                нас не большие затраты.
+                <span
+                  class="pension__item-text pension__item-text--second-paragraph"
+                >
+                  К тому же по статистике в среднем из всех складов
+                  самообслуживани, те у кого заполняемость ниже 50%, всего 4%
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="pension__item pension__item--3">
+            <div class="pension__item-container">
+              <img
+                src="images/check-mark.svg"
+                alt="Галочка"
+                class="pension__item-icon"
+              />
+              <p class="pension__item-text">
+                Производители контейнеров гарантирует срок службы контейнера 50
+                лет. Это в суровых условиях в море где есть соль, вода и
+                постоянные разгрузки.
+                <span
+                  class="pension__item-text pension__item-text--second-paragraph"
+                  >К тому же по статистике в среднем из всех складов
+                  самообслуживани, те у кого заполняемость ниже 50%, всего
+                  4%</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="pension__item pension__item--4">
+            <div class="pension__item-container">
+              <img
+                src="images/check-mark.svg"
+                alt="Галочка"
+                class="pension__item-icon"
+              />
+              <p class="pension__item-text">
+                Хранения вещей актуально всегда и спрос только растет. Рост
+                заполняемости складов и появления новых складов ежегодно
+                подтверждает тренд
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stability">
+      <div class="container">
+        <h1 class="stability__title block-title">
+          Устойчивая сфера <br />
+          даже в кризис
+        </h1>
+        <div class="stability__items">
+          <div class="stability__item">
+            <div class="stability__item-img-container dark-block">
+              <img
+                src="images/stability/stability-1.png"
+                alt="Растущие накопления"
+                class="stability__item-img--1 img-no-drag"
+              />
+            </div>
+            <h4 class="stability__item-title">При росте экономики</h4>
+            <ul class="stability__item-list stability__item-text">
+              <li>
+                С ростом э-комерции у людей все меньше свободного пространства
+                для хранения всех вещей.
+              </li>
+              <li>
+                С ростом бизнеса, компании ищут новые складские помещения для
+                товара и оборудования.
+              </li>
+            </ul>
+          </div>
+          <div class="stability__item">
+            <div class="stability__item-img-container dark-block">
+              <img
+                src="images/stability/stability-2.png"
+                alt="Кризис"
+                class="img-no-drag"
+              />
+            </div>
+            <h4 class="stability__item-title">В случае кризиса</h4>
+            <p class="stability__item-text">
+              Люди и компании начинают экономить и переезжают в более маленькие
+              площади(квартиры, офисы). Лишнего места для всех вещей не остается
+              и они в поиске склада для хранения вещей по выгодной цене
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="investment-advantages">
+      <div class="container">
+        <h1 class="investment-advantages__title block-title">
+          Инвестиции в Boxrent Это:
+        </h1>
+        <div class="investment-advantages__items">
+          <div class="investment-advantages__item">
+            <div class="investment-advantages__item-icon-container">
+              <img
+                src="images/investment-advantages/investment-advantages-1.svg"
+                alt="Ежемесячные выплаты"
+                class="investment-advantages__item-icon"
+              />
+            </div>
+            <h4 class="investment-advantages__item-title">
+              Ежемесячные выплаты инвестору
+            </h4>
+            <p class="investment-advantages__item-text">
+              Инвесторы стабильно получают прибыль с аренды каждый месяц до 15
+              числа
+            </p>
+          </div>
+          <div class="investment-advantages__item">
+            <div class="investment-advantages__item-icon-container">
+              <img
+                src="images/investment-advantages/investment-advantages-2.svg"
+                alt="Стабильность"
+                class="investment-advantages__item-icon"
+              />
+            </div>
+            <h4 class="investment-advantages__item-title">Стабильность</h4>
+            <p class="investment-advantages__item-text">
+              Boxrent управляет активами в размере ≈ 300 000 € в 2 странах
+              Балтии, имеет активную базу арендаторов которая с каждым месяцем
+              увеличивается
+            </p>
+          </div>
+          <div class="investment-advantages__item">
+            <div class="investment-advantages__item-icon-container">
+              <img
+                src="images/investment-advantages/investment-advantages-3.svg"
+                alt="Деверсификация"
+                class="investment-advantages__item-icon"
+              />
+            </div>
+            <h4 class="investment-advantages__item-title">Деверсификация</h4>
+            <p class="investment-advantages__item-text">
+              Деверсификация не только между разных локаций и городов, но и
+              между типов клиентов - большие размеры арендуют компании,
+              маленькие используют для личного хранения
+            </p>
+          </div>
+          <div class="investment-advantages__item">
+            <div class="investment-advantages__item-icon-container">
+              <img
+                src="images/investment-advantages/investment-advantages-4.svg"
+                alt="Пассивный заработок"
+                class="investment-advantages__item-icon"
+              />
+            </div>
+            <h4 class="investment-advantages__item-title">
+              Пассивный заработок
+            </h4>
+            <p class="investment-advantages__item-text">
+              Маркетинг, работа с должниками, уход за вашими контейнерами - все
+              бизнес процесы мы полностью берем на себя
+            </p>
+          </div>
+          <div class="investment-advantages__item">
+            <div class="investment-advantages__item-icon-container">
+              <img
+                src="images/investment-advantages/investment-advantages-5.svg"
+                alt="Оберегире деньги от инфляции"
+                class="investment-advantages__item-icon"
+              />
+            </div>
+            <h4 class="investment-advantages__item-title">
+              Оберегире деньги от инфляции
+            </h4>
+            <p class="investment-advantages__item-text">
+              С процентами которые предлагают банковские депозиты, Вы теряете.
+              Наша компания как и другие с каждым годом увеличивает аренду. За
+              прошлый год в Европе цена на склады увеличилась на 7%
+            </p>
+          </div>
+          <div class="investment-advantages__item">
+            <div class="investment-advantages__item-icon-container">
+              <img
+                src="images/investment-advantages/investment-advantages-6.svg"
+                alt="Инвестируйте удалённо"
+                class="investment-advantages__item-icon"
+              />
+            </div>
+            <h4 class="investment-advantages__item-title">
+              Инвестируйте удалённо
+            </h4>
+            <p class="investment-advantages__item-text">
+              Вы можете придти на чай в любое время по адресу Braslas iela 29a,
+              Riga, LV-1009. Но также можете инвестировать удаленно с любой
+              точки мира
+            </p>
+          </div>
+          <div class="investment-advantages__item">
+            <div class="investment-advantages__item-icon-container">
+              <img
+                src="images/investment-advantages/investment-advantages-7.svg"
+                alt="Низкий порог входа"
+                class="investment-advantages__item-icon"
+              />
+            </div>
+            <h4 class="investment-advantages__item-title">
+              Низкий порог входа
+            </h4>
+            <p class="investment-advantages__item-text">
+              Возсожность убедиться в бизнес модели с относительно низкой суммой
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comparison-with-apartment">
+      <div class="container">
+        <h1 class="comparison-with-apartment__title block-title">
+          Сравнения со сдачей квартиры
+        </h1>
+        <table class="comparison-with-apartment__table">
+          <thead>
+            <th class="comparison-with-apartment__table-titles">
+              <div
+                class="comparison-with-apartment__table-column-title comparison-with-apartment__table-column-title--1"
+              ></div>
+              <h5
+                class="comparison-with-apartment__table-column-title comparison-with-apartment__table-column-title--2"
+              >
+                Сдача квартиры в долгий срок
+              </h5>
+              <h5
+                class="comparison-with-apartment__table-column-title comparison-with-apartment__table-column-title--3"
+              >
+                Инвестиция в контейнер
+              </h5>
+            </th>
+          </thead>
+          <tbody class="comparison-with-apartment__table-body">
+            <tr class="comparison-with-apartment__table-row">
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--1"
+              >
+                Ликвидный актив
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--2"
+              >
+                Да
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--3"
+              >
+                Да
+              </td>
+            </tr>
+            <tr
+              class="comparison-with-apartment__table-row comparison-with-apartment__table-row--2"
+            >
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--1"
+              >
+                Порог входа
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--2"
+              >
+                ≈ 35 000 €
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--3"
+              >
+                5 000 €
+              </td>
+            </tr>
+            <tr class="comparison-with-apartment__table-row">
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--1"
+              >
+                Управления
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--2"
+              >
+                Вы ищете арендаторов, контролируете их оплаты, и тд.
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--3"
+              >
+                Полностью пассивно. Всем занимаемся мы.
+              </td>
+            </tr>
+            <tr
+              class="comparison-with-apartment__table-row comparison-with-apartment__table-row--4"
+            >
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--1"
+              >
+                Ремонты
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--2"
+              >
+                Косметический ремонт раз в 5-8 лет. Занимаетесь вы.
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--3"
+              >
+                Подкрасить, заварить - раз в 2-5 лет. Занимаемся мы.
+              </td>
+            </tr>
+            <tr
+              class="comparison-with-apartment__table-row comparison-with-apartment__table-row--5"
+            >
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--1"
+              >
+                Рост стоимости
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--2"
+              >
+                В среднем 5,3% в год
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--3"
+              >
+                В среднем 15% в год
+              </td>
+            </tr>
+            <tr
+              class="comparison-with-apartment__table-row comparison-with-apartment__table-row--6"
+            >
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--1"
+              >
+                Возврат
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--2"
+              >
+                6-9% в год
+              </td>
+              <td
+                class="comparison-with-apartment__table-column comparison-with-apartment__table-column--3"
+              >
+                15-17% в год
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="any-questions short-block dark-block">
+      <div class="container">
+        <p class="any-questions__text">Есть вопросы?</p>
+        <a href="tel:+371 253 555 24" class="any-questions__phone">
+          <img
+            src="images/big-phone.svg"
+            alt="Телефон"
+            class="any-questions__phone-img"
+          />
+          <p class="any-questions__phone-number">+371 253 555 24</p>
+        </a>
+      </div>
+    </section>
+    <section class="comparison-with-center">
+      <div class="container">
+        <h1 class="comparison-with-center__title block-title">
+          Сравнения с классическим<br />
+          центром самообслуживания
+        </h1>
+        <div class="comparison-with-center__label"><h5>Для бизнеса</h5></div>
+        <table class="comparison-with-center__table">
+          <thead>
+            <th class="comparison-with-center__column-titles">
+              <div
+                class="comparison-with-center__column-title comparison-with-center__column-title--1"
+              ></div>
+              <h5
+                class="comparison-with-center__column-title comparison-with-center__column-title--2"
+              >
+                Центр складов самообслуживания
+              </h5>
+              <h5
+                class="comparison-with-center__column-title comparison-with-center__column-title--3"
+              >
+                Склады из контейнеров
+              </h5>
+            </th>
+          </thead>
+          <tbody class="comparison-with-center__table-body">
+            <tr class="comparison-with-center__table-row">
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--1"
+              >
+                <p>Согласование</p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--2"
+              >
+                <p>
+                  Необходим проект + согласование<br />
+                  строительства
+                </p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--3"
+              >
+                <p>
+                  Согласование не нужно. Контейнер<br />
+                  считается временной конструкцией
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="comparison-with-center__table-row comparison-with-center__table-row--2"
+            >
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--1"
+              >
+                <p>Масштабирование</p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--2"
+              >
+                <p><span>Высокий риск</span></p>
+                <p>
+                  Масштабирование происходит только<br />
+                  построив новый центр в новой лакации
+                </p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--3"
+              >
+                <p><span>Минимум риска</span></p>
+                <p>
+                  Мы строим склады поэтапно<br />
+                  в зависимости от спроса. Платим<br />
+                  только за использованную землю
+                </p>
+              </td>
+            </tr>
+            <tr class="comparison-with-center__table-row">
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--1"
+              >
+                <p>
+                  Гибкость выбора с<br />
+                  наибольшим спросом
+                </p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--2"
+              >
+                <p><span>Не эффективно</span></p>
+                <p>
+                  Выбор размеров складов базируется<br />
+                  на изследовании рынка
+                </p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--3"
+              >
+                <p><span>Очень гибкие</span></p>
+                <p>
+                  Поэтапное строительство. После<br />
+                  каждого этапа владеем информацией<br />
+                  спроса на определенные размеры. <br />
+                  Строим под реальный спрос в моменте
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="comparison-with-center__table-row comparison-with-center__table-row--4"
+            >
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--1"
+              >
+                <p>Мобильность</p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--2"
+              >
+                <p><span>Нету</span></p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--3"
+              >
+                <p><span>Мобильны</span></p>
+                <p>
+                  В случае изменения ситуации на рынке,<br />
+                  падения спроса в определенной локации,<br />
+                  транспортировка 1 контейнера равна<br />
+                  месячной прибыли этого контейнера
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="comparison-with-center__label"><h5>Для клиентов</h5></div>
+        <table class="comparison-with-center__table">
+          <thead>
+            <th class="comparison-with-center__column-titles">
+              <div
+                class="comparison-with-center__column-title comparison-with-center__column-title--1"
+              ></div>
+              <div
+                class="comparison-with-center__column-title comparison-with-center__column-title--2"
+              ></div>
+              <div
+                class="comparison-with-center__column-title comparison-with-center__column-title--3"
+              ></div>
+            </th>
+          </thead>
+          <tbody class="comparison-with-center__table-body">
+            <tr class="comparison-with-center__table-row">
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--1"
+              >
+                <p>Удобства</p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--2"
+              >
+                <p>
+                  От авто до склада нужно нести<br />
+                  вещи, от ≈ 20 до 60 метров
+                </p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--3"
+              >
+                <p>
+                  Подъезда прямо к складу<br />
+                  на грузовой и легковой машине
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="comparison-with-center__table-row comparison-with-center__table-row--2"
+            >
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--1"
+              >
+                <p>Цены</p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--2"
+              >
+                <p>Дорого</p>
+                <p><span>9-20€/m2</span></p>
+              </td>
+              <td
+                class="comparison-with-center__table-column comparison-with-center__table-column--3"
+              >
+                <p>Выгодно</p>
+                <p class="comparison-with-center__red-text">4-13€/m2</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="growth dark-block">
+      <div class="container">
+        <h1 class="growth__title block-title">Рост рынка в Европе</h1>
+        <p class="growth__text">
+          Сфера Self Storage в Европе относительно молодая и на данный момент
+          рынок очень активно развивается. Мы предлагаем Вам присоидиниться к
+          этому быстро растущему рынку.
+        </p>
+        <div class="growth__comparison-items">
+          <div class="growth__comparison-item">
+            <img
+              src="images/growth/mans-1.svg"
+              alt=""
+              class="growth__item-img"
+            />
+            <p class="growth__item-text">
+              В США каждый 10-ый пользуется <br />
+              складом самообслуживания
+            </p>
+          </div>
+          <div class="growth__comparison-item">
+            <img
+              src="images/growth/mans-2.svg"
+              alt=""
+              class="growth__item-img"
+            />
+            <p class="growth__item-text">В Европе только каждый 110-й...</p>
+          </div>
+        </div>
+        <div class="growth__statistics">
+          <div class="growth__statistics-percent"><h4>+ 81%</h4></div>
+          <p class="growth__statistics-text">
+            Столько новых компаний складов<br />
+            самообслуживания построили в Европе<br />
+            за последние <span>4 года*</span>
+          </p>
+          <p class="growth__statistics-footnote">
+            *За период 2016-2022. Данные взяты
+            <a href="#" class="growth__statistics-link">тут</a>
+          </p>
+        </div>
+      </div>
+      <img
+        src="images/growth/container-2.png"
+        alt="Контейнер"
+        class="growth__img img-no-drag"
+      />
+    </section>
+    <section class="growth-statistics">
+      <div class="container">
+        <div class="growth-statistics__left-part">
+          <h3 class="growth-statistics__title block-title">
+            Развитие Self Storage в Европе
+          </h3>
+          <div class="growth-statistics__legend">
+            <div
+              class="growth-statistics__legend-item growth-statistics__legend-item--1"
+            >
+              <div class="growth-statistics__legend-mark"></div>
+              <p class="growth-statistics__legend-label">
+                Примерное число компаний в сфере Self Storage
+              </p>
+            </div>
+            <div
+              class="growth-statistics__legend-item growth-statistics__legend-item--2"
+            >
+              <div class="growth-statistics__legend-mark"></div>
+              <p class="growth-statistics__legend-label">
+                Средняя заполняемость
+              </p>
+            </div>
+          </div>
+          <div class="growth-statistics__diagram">
+            <div class="growth-statistics__diagram-data">
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">2 400</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--1"
+                ></div>
+              </div>
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">2 600</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--2"
+                ></div>
+              </div>
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">2 700</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--3"
+                ></div>
+              </div>
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">3 247</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--4"
+                ></div>
+              </div>
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">3 792</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--5"
+                ></div>
+              </div>
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">4 290</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--6"
+                ></div>
+              </div>
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">4 831</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--7"
+                ></div>
+              </div>
+              <div class="growth-statistics__data-series">
+                <p class="growth-statistics__text-data">5 173</p>
+                <div
+                  class="growth-statistics__graphic-data growth-statistics__graphic-data--8"
+                ></div>
+              </div>
+            </div>
+            <img
+              src="images/diagram.svg"
+              alt="Диаграмма"
+              class="growth-statistics__background"
+            />
+          </div>
+        </div>
+        <div class="growth-statistics__right-part">
+          <div class="growth-statistics__important-info">
+            Склады самообслуживания- <br />
+            перспективный рынок
+          </div>
+          <div class="growth-statistics__materials">
+            <h3 class="growth-statistics__materials-title">Материалы</h3>
+            <div class="growth-statistics__materials-items">
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2014
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2015
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2016
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2017
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2018
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2019
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2020
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="growth-statistics__materials-item-link">
+                <div class="growth-statistics__materials-item">
+                  <div class="growth-statistics__item-icon">
+                    <img src="images/pdf.svg" alt="PDF" />
+                  </div>
+                  <p class="growth-statistics__item-name">
+                    Fedessa отчет Европы 2021
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="join-us dark-block short-block">
+      <div class="container">
+        <div class="join-us__row">
+          <p class="join-us__row-text">Присоединяйся к быстро</p>
+          <img src="images/rocket.svg" alt="Ракета" class="join-us__row-icon" />
+          <p class="join-us__row-text">растущему рынку вместе с Boxrent!</p>
+        </div>
+      </div>
+    </section>
+    <section class="feedback-form">
+      <div class="container">
+        <form class="feedback-form__form">
+          <div class="feedback-form__form-description">
+            <h2 class="feedback-form__form-title">
+              Оставьте <br />
+              заявку
+            </h2>
+            <p class="feedback-form__form-text">
+              И мы свяжемся с Вами <br />
+              в ближайшее время
+            </p>
+          </div>
+          <div class="feedback-form__form-content">
+            <div class="feedback-form__form-inputs">
+              <input
+                type="text"
+                class="feedback-form__form-input"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="tel"
+                class="feedback-form__form-input"
+                placeholder="Ваш номер телефона"
+              />
+              <input
+                type="email"
+                class="feedback-form__form-input"
+                placeholder="Ваш e-mail"
+              />
+              <textarea
+                class="feedback-form__form-textarea"
+                placeholder="Комментарии"
+              ></textarea>
+            </div>
+            <button class="feedback-form__form-btn feedback-btn">
+              Отправить заявку
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="answers-to-questions">
+      <div class="container">
+        <h1 class="answers-to-questions__title block-title">
+          Остались вопросы?
+        </h1>
+        <div class="answers-to-questions__accordion">
+          <div class="answers-to-questions__accordion-item active">
+            <div class="answers-to-questions__accordion-question">
+              <p class="answers-to-questions__question-name">Вопрос</p>
+              <button class="answers-to-questions__question-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M11.6758 0.75V10.3242H21.25V11.6758H11.6758V21.25H10.3242V11.6758H0.75V10.3242H10.3242V0.75H11.6758Z"
+                    stroke-width="0.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="answers-to-questions__accordion-answer">
+              Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+              сгенерировать несколько абзацев более менее осмысленного текста
+              рыбы на русском языке, а начинающему оратору отточить навык
+              публичных выступлений в домашних условиях.
+            </p>
+          </div>
+          <div
+            class="answers-to-questions__accordion-item answers-to-questions__accordion-item--2"
+          >
+            <div class="answers-to-questions__accordion-question">
+              <p class="answers-to-questions__question-name">Вопрос</p>
+              <button class="answers-to-questions__question-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M11.6758 0.75V10.3242H21.25V11.6758H11.6758V21.25H10.3242V11.6758H0.75V10.3242H10.3242V0.75H11.6758Z"
+                    stroke-width="0.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="answers-to-questions__accordion-answer">
+              Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+              сгенерировать несколько абзацев более менее осмысленного текста
+              рыбы на русском языке, а начинающему оратору отточить навык
+              публичных выступлений в домашних условиях.
+            </p>
+          </div>
+          <div class="answers-to-questions__accordion-item">
+            <div class="answers-to-questions__accordion-question">
+              <p class="answers-to-questions__question-name">Вопрос</p>
+              <button class="answers-to-questions__question-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M11.6758 0.75V10.3242H21.25V11.6758H11.6758V21.25H10.3242V11.6758H0.75V10.3242H10.3242V0.75H11.6758Z"
+                    stroke-width="0.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="answers-to-questions__accordion-answer">
+              Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+              сгенерировать несколько абзацев более менее осмысленного текста
+              рыбы на русском языке, а начинающему оратору отточить навык
+              публичных выступлений в домашних условиях.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="dark-block">
+      <div class="container">
+        <div class="footer__head">
+          <div class="footer__phone-and-media">
+            <a href="tel:+371 20 440 882" class="footer__phone"
+              >+371 20 440 882</a
+            >
+            <div class="footer__media">
+              <a
+                href="https://www.youtube.com/channel/UCiuFDdgkIuGcky5dQ01p-2Q"
+                target="_blank"
+                ><img src="images/youtube.svg" alt="YouTube"
+              /></a>
+              <a href="https://www.facebook.com/boxrentlv/" target="_blank"
+                ><img src="images/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="https://instagram.com/boxrent_lt" target="_blank"
+                ><img src="images/instagram.svg" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__contact-email">
+            <div class="footer__contact-icon">
+              <img src="images/email.svg" alt="Email" />
+            </div>
+            <div class="footer__contact-text">
+              <p class="footer__email">sales@boxrent.lv</p>
+              <p class="footer__contact-description">(Для клиентов)</p>
+            </div>
+          </div>
+          <div class="footer__contact-email">
+            <div class="footer__contact-icon">
+              <img src="images/email.svg" alt="Email" />
+            </div>
+            <div class="footer__contact-text">
+              <p class="footer__email">info@boxrent.lv</p>
+              <p class="footer__contact-description">(Сотрудничество)</p>
+            </div>
+          </div>
+          <div class="footer__location">
+            <div class="footer__location-icon">
+              <img src="images/location.svg" alt="Location" />
+            </div>
+            <p class="footer__location-adress">
+              Braslas iela 20 <br />
+              Krustbaznīcas iela 8a <br />
+              Rankas iela 8
+            </p>
+          </div>
+          <div class="footer__location">
+            <div class="footer__location-icon">
+              <img src="images/location.svg" alt="Location" />
+            </div>
+            <p class="footer__location-adress">
+              Jūrkalnes iela 6 <br />
+              Airītes iela 9 <br />
+              Slokas iela 130
+            </p>
+          </div>
+        </div>
+        <div class="footer__content-container">
+          <div class="footer__links">
+            <a href="" class="footer__link">Asmeninių daiktų saugojimas</a>
+            <a href="" class="footer__link">Išnuomojamas sandėlis Vilniuje</a>
+            <a href="" class="footer__link">Nedidelis sandėlis Vilniuje</a>
+            <a href="" class="footer__link">Patalpų nuoma</a>
+            <a href="" class="footer__link">Boxrent Latvijoje</a>
+            <a href="" class="footer__link">Investicijos!</a>
+          </div>
+          <div class="footer__requisites">
+            <h5 class="footer__requisites-title">Реквезиты</h5>
+            <div class="footer__requisites-items">
+              <p class="footer__requisites-item">UAB Boxrent</p>
+              <p class="footer__requisites-item">
+                Registration code: 305988825
+              </p>
+              <p class="footer__requisites-item">
+                PVM mokėtojo kodas: LT100015720014
+              </p>
+              <p class="footer__requisites-item">
+                Adresas: Perkūnkiemio g. 13-91, LT-12114 Vilnius
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyrights">
+          <p>Boxrent | 2025 Copyright © Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="sript.js"></script>
+  </body>
+</html>
