@@ -14,11 +14,21 @@
             ><img src="images/logo.svg" alt="Logo" class="header__logo"
           /></a>
           <nav class="header__links">
-            <a href="#" class="header__link">О нас</a>
-            <a href="#" class="header__link">Почему мы?</a>
-            <a href="#" class="header__link">Этапы работы</a>
-            <a href="#" class="header__link">Инвестирование</a>
-            <a href="#" class="header__link">Контакты</a>
+            <a href="#" onclick="scrollToAboutUs()" class="header__link"
+              >О нас</a
+            >
+            <a href="#" onclick="scrollToWhyWe()" class="header__link"
+              >Почему мы?</a
+            >
+            <a href="#" onclick="scrollToWorkSteps()" class="header__link"
+              >Этапы работы</a
+            >
+            <a href="#" onclick="scrollToInvestment()" class="header__link"
+              >Инвестирование</a
+            >
+            <a href="#" onclick="scrollToContacts()" class="header__link"
+              >Контакты</a
+            >
           </nav>
           <a href="tel:+371 20-440-882" class="header__phone-container">
             <img
@@ -68,7 +78,7 @@
               </p>
             </li>
           </ul>
-          <button class="home__btn feedback-btn">
+          <button class="home__btn feedback-btn" onclick="scrollToFeedback()">
             Получить коммерческое предложение
           </button>
         </div>
@@ -88,55 +98,73 @@
           <div class="calc__math-items">
             <div class="calc__math-item">
               <p class="calc__math-name">Ваша инвестиция</p>
-              <div class="calc__math-value">8000 €</div>
+              <div
+                class="calc__math-value calc__math-value--1"
+                id="investmentValue"
+              >
+                8000 €
+              </div>
               <div class="calc__math-progress">
                 <input
                   class="calc__progress-bar"
                   type="range"
-                  id="calcProgressBar"
+                  id="investmentProgressBar"
                   value="8000"
                   min="8000"
                   max="40000"
+                  step="4000"
                 />
-                <div class="calc__pregress-values">
-                  <p class="calc__pregress-value">8000 €</p>
-                  <p class="calc__pregress-value">40000 €</p>
+                <div class="calc__progress-values">
+                  <p class="calc__progress-value">8000 €</p>
+                  <p class="calc__progress-value">40000 €</p>
                 </div>
               </div>
             </div>
             <div class="calc__math-item">
               <p class="calc__math-name">В вашей собственности</p>
-              <div class="calc__math-value">1 конт.</div>
+              <div
+                class="calc__math-value calc__math-value--2"
+                id="containerValue"
+              >
+                2 конт.
+              </div>
               <div class="calc__math-progress">
                 <input
                   class="calc__progress-bar"
                   type="range"
-                  id="calcProgressBar"
-                  value="1"
-                  min="1"
+                  id="containerProgressBar"
+                  value="2"
+                  min="2"
                   max="10"
+                  step="1"
                 />
-                <div class="calc__pregress-values">
-                  <p class="calc__pregress-value">1 конт.</p>
-                  <p class="calc__pregress-value">10 конт.</p>
+                <div class="calc__progress-values">
+                  <p class="calc__progress-value">2 конт.</p>
+                  <p class="calc__progress-value">10 конт.</p>
                 </div>
               </div>
             </div>
             <div class="calc__math-item">
               <p class="calc__math-name">Ваша доходность (в год)</p>
-              <div class="calc__math-value">10.5 %</div>
+              <div
+                class="calc__math-value calc__math-value--3"
+                id="incomeValue"
+              >
+                10.5 %
+              </div>
               <div class="calc__math-progress">
                 <input
                   class="calc__progress-bar"
                   type="range"
-                  id="calcProgressBar"
+                  id="incomeProgressBar"
                   value="10.5"
                   min="10.5"
                   max="12"
+                  step="0.5"
                 />
-                <div class="calc__pregress-values">
-                  <p class="calc__pregress-value">10.5 %</p>
-                  <p class="calc__pregress-value">12 %</p>
+                <div class="calc__progress-values">
+                  <p class="calc__progress-value">10.5 %</p>
+                  <p class="calc__progress-value">12 %</p>
                 </div>
               </div>
             </div>
@@ -149,18 +177,18 @@
             <div class="calc__results">
               <div class="calc__result">
                 <p class="calc__result-name">В месяц:</p>
-                <p class="calc__result-value">129 €</p>
+                <p class="calc__result-value" id="monthlyIncome">129 €</p>
               </div>
               <div class="calc__result">
                 <p class="calc__result-name">В год:</p>
-                <p class="calc__result-value">1 550 €</p>
+                <p class="calc__result-value" id="annualIncome">1 550 €</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="aboutUs">
       <div class="container">
         <img
           src="images/container-photo.png"
@@ -321,7 +349,7 @@
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="whyWe">
       <div class="container">
         <h1 class="advantages__title block-title">
           Почему нас выбрали<br />
@@ -518,7 +546,7 @@
         </div>
       </div>
     </section>
-    <section class="steps">
+    <section class="steps" id="workSteps">
       <div class="container">
         <h1 class="steps__title block-title">Как мы работаем?</h1>
         <div class="steps__items">
@@ -568,7 +596,9 @@
               Мы ищем землю в выбранных районах и заключаем долгосрочный договор
               аренды от ≈ 2 до 5 лет
             </p>
-            <a href="#" class="steps__item-question">У вас есть территория?</a>
+            <a onclick="scrollToFeedback()" class="steps__item-question"
+              >У вас есть территория?</a
+            >
           </div>
           <div class="steps__item">
             <div class="steps__item-head">
@@ -708,7 +738,7 @@
         </div>
       </div>
     </section>
-    <section class="investment">
+    <section class="investment" id="investment">
       <div class="container">
         <h1 class="investment__title block-title">
           Как происходит<br />
@@ -798,7 +828,10 @@
                 </tr>
               </tbody>
             </table>
-            <button class="investment__btn feedback-btn">
+            <button
+              class="investment__btn feedback-btn"
+              onclick="scrollToFeedback()"
+            >
               Получить коммерческое предложение
             </button>
           </div>
@@ -1726,7 +1759,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback-form">
+    <section class="feedback-form" id="feedback">
       <div class="container">
         <form class="feedback-form__form">
           <div class="feedback-form__form-description">
@@ -1745,16 +1778,19 @@
                 type="text"
                 class="feedback-form__form-input"
                 placeholder="Ваше имя"
+                required
               />
               <input
                 type="tel"
                 class="feedback-form__form-input"
                 placeholder="Ваш номер телефона"
+                required
               />
               <input
                 type="email"
                 class="feedback-form__form-input"
                 placeholder="Ваш e-mail"
+                required
               />
               <textarea
                 class="feedback-form__form-textarea"
@@ -1854,7 +1890,7 @@
         </div>
       </div>
     </section>
-    <footer class="dark-block">
+    <footer class="dark-block" id="contacts">
       <div class="container">
         <div class="footer__head">
           <div class="footer__phone-and-media">

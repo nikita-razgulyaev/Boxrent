@@ -271,12 +271,24 @@ header {
 
 .calc__math-value {
   margin-top: 19px;
-  width: fit-content;
-  padding: 12px 17px;
+  padding: 12px 0;
   border: var(--LightGray) 1px solid;
   font-family: var(--Gilroy-SemiBold);
   font-size: 20px;
   color: var(--DeepBlue);
+  text-align: center;
+}
+
+.calc__math-value--1 {
+  width: 115px;
+}
+
+.calc__math-value--2 {
+  width: 105px;
+}
+
+.calc__math-value--3 {
+  width: 85px;
 }
 
 .calc__math-progress {
@@ -290,17 +302,18 @@ header {
   accent-color: var(--CrimsonRed);
 }
 
-.calc__pregress-values {
+.calc__progress-values {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-.calc__pregress-value {
+.calc__progress-value {
   color: var(--SteelGray);
 }
 
 .calc__results-container {
+  width: 100%;
   padding: 60px 50px;
   background-color: var(--SoftWhite);
 }
@@ -464,7 +477,8 @@ header {
 
 .advantages__slider-container {
   width: 379px;
-  height: 765px;
+  height: 745px;
+  border-radius: 65px;
   position: relative;
   overflow: hidden;
   z-index: 10;
@@ -473,7 +487,7 @@ header {
 .advantages__slider-border {
   position: absolute;
   width: 379px;
-  height: 765px;
+  height: 745px;
   background-image: url("images/slider/border\ image.png");
   background-position: center;
   background-size: 100%;
@@ -483,25 +497,20 @@ header {
 }
 
 .advantages__slider {
-  margin: 18px 0 0 22px;
+  margin-left: 22px;
   width: 332px;
-  height: 725px; /*Временная высота, равная высоте экрана. При написании js она должна быть заменена на сумму высоты всех слайдов*/
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.5s ease;
   position: absolute;
   overflow: hidden;
   top: 0;
   left: 0;
   z-index: 1;
+  will-change: transform; /* Оптимизация анимации */
 }
 
 .advantages__slide {
   width: 332px;
   height: 250px;
   flex-shrink: 0;
-  position: relative;
 }
 
 .advantages__slide img {
@@ -565,6 +574,7 @@ header {
 
 .scheme__point {
   position: absolute;
+  z-index: 2;
 }
 
 .scheme__point--1 {
@@ -623,8 +633,9 @@ header {
   padding: 40px;
   background-color: var(--PureWhite);
   position: absolute;
-  display: none;
+  opacity: 0;
   color: var(--DeepBlue);
+  transition: 0.2s;
 }
 
 .scheme__point-popup--1 {
@@ -1382,38 +1393,38 @@ header {
   width: 20px;
   height: 1px;
   background-color: var(--DeepBlue);
-  transition: 0.5s;
+  transition: 1s;
 }
 
-.growth-statistics__graphic-data--1 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--1 {
   height: 133px;
 }
 
-.growth-statistics__graphic-data--2 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--2 {
   height: 142px;
 }
 
-.growth-statistics__graphic-data--3 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--3 {
   height: 148px;
 }
 
-.growth-statistics__graphic-data--4 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--4 {
   height: 182px;
 }
 
-.growth-statistics__graphic-data--5 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--5 {
   height: 210px;
 }
 
-.growth-statistics__graphic-data--6 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--6 {
   height: 236px;
 }
 
-.growth-statistics__graphic-data--7 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--7 {
   height: 263px;
 }
 
-.growth-statistics__graphic-data--8 {
+.growth-statistics__diagram.active .growth-statistics__graphic-data--8 {
   height: 286px;
 }
 
