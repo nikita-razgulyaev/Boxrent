@@ -246,10 +246,92 @@ function isElementInViewport(el) {
   );
 }
 
+function animateNumber(elementId, targetNumber, duration = 1500) {
+  const element = document.getElementById(elementId);
+  if (!element) {
+    console.error(`Element with id "${elementId}" not found`);
+    return;
+  }
+
+  const startTime = performance.now();
+  const startNumber = 0;
+
+  function updateNumber(currentTime) {
+    const elapsedTime = currentTime - startTime;
+    const progress = Math.min(elapsedTime / duration, 1);
+    const currentNumber = Math.floor(progress * targetNumber);
+
+    element.textContent = currentNumber.toLocaleString();
+    if (progress < 1) {
+      requestAnimationFrame(updateNumber);
+    } else {
+      element.textContent = targetNumber.toLocaleString();
+    }
+  }
+
+  requestAnimationFrame(updateNumber);
+}
+
 function handleScroll() {
   if (isElementInViewport(diagram)) {
     diagram.classList.add("active");
+    animateNumber("firstNumber", 2400);
+    animateNumber("secondNumber", 2600);
+    animateNumber("thirdNumber", 2700);
+    animateNumber("fourthNumber", 3247);
+    animateNumber("fifthNumber", 3792);
+    animateNumber("sixthNumber", 4290);
+    animateNumber("seventhNumber", 4831);
+    animateNumber("eighthNumber", 5173);
+    window.removeEventListener("scroll", handleScroll);
   }
 }
 
 window.addEventListener("scroll", handleScroll);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const feedbackForm = document.getElementById("feedback");
+  const feedbackInputName = document.getElementById("feedbackInputName");
+  const feedbackInputPhone = document.getElementById("feedbackInputPhone");
+  const feedbackInputEmail = document.getElementById("feedbackInputEmail");
+  const feedbackInputComment = document.getElementById("feedbackInputComment");
+
+  feedbackForm.addEventListener("submit", (event) => {
+    if (feedbackForm.checkValidity()) {
+      feedbackInputName.value = "";
+      feedbackInputPhone.value = "";
+      feedbackInputEmail.value = "";
+      feedbackInputComment.value = "";
+      alert("Ваша заявка успешно отправлена!");
+    }
+    event.preventDefault();
+  });
+});
+
+const firstQuestion = document.querySelector(
+  ".answers-to-questions__accordion-item--1"
+);
+const secondQuestion = document.querySelector(
+  ".answers-to-questions__accordion-item--2"
+);
+const thirdQuestion = document.querySelector(
+  ".answers-to-questions__accordion-item--3"
+);
+
+function openFirstAnswer() {
+  firstQuestion.classList.add("active");
+  secondQuestion.classList.remove("active");
+  thirdQuestion.classList.remove("active");
+}
+
+function openSecondAnswer() {
+  firstQuestion.classList.remove("active");
+  secondQuestion.classList.add("active");
+  thirdQuestion.classList.remove("active");
+}
+
+function openThirdAnswer() {
+  firstQuestion.classList.remove("active");
+  secondQuestion.classList.remove("active");
+  thirdQuestion.classList.add("active");
+}

@@ -1377,6 +1377,7 @@ header {
 }
 
 .growth-statistics__data-series {
+  width: 50px;
   display: grid;
   justify-items: center;
   align-content: flex-end;
@@ -1387,13 +1388,14 @@ header {
   font-family: var(--Gilroy-SemiBold);
   font-size: 16px;
   letter-spacing: 5%;
+  text-align: center;
 }
 
 .growth-statistics__graphic-data {
   width: 20px;
   height: 1px;
   background-color: var(--DeepBlue);
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .growth-statistics__diagram.active .growth-statistics__graphic-data--1 {
@@ -1621,7 +1623,8 @@ header {
 }
 
 .answers-to-questions__accordion-item.active
-  .answers-to-questions__question-btn {
+  .answers-to-questions__question-btn,
+.answers-to-questions__question-btn:hover {
   background-color: var(--CrimsonRed);
   rotate: -45deg;
 }
@@ -1634,7 +1637,8 @@ header {
 
 .answers-to-questions__accordion-item.active
   .answers-to-questions__question-btn
-  path {
+  path,
+.answers-to-questions__question-btn:hover path {
   fill: var(--PureWhite);
   stroke: var(--PureWhite);
 }
