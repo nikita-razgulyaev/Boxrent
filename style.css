@@ -231,14 +231,14 @@ header {
 
 .home__img-container {
   position: absolute;
-  top: 225px;
-  left: 540px;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  z-index: 0;
 }
 
 .home__img {
+  margin: 225px 0 0 800px;
   width: 1368px;
   height: 745px;
 }
