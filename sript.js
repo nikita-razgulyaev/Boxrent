@@ -216,20 +216,37 @@ const points = [
 
 points.forEach((point) => {
   const pointElement = document.querySelector(`.${point.className}`);
-  if (pointElement) {
+  const popup = document.querySelector(`.${point.popupClass}`);
+  let timeoutId;
+
+  if (pointElement && popup) {
     pointElement.addEventListener("mouseover", () => {
-      const popup = document.querySelector(`.${point.popupClass}`);
-      if (popup) {
-        popup.style.opacity = "1";
-        popup.style.zIndex = "3";
-      }
+      clearTimeout(timeoutId);
+      popup.style.opacity = "1";
+      popup.style.zIndex = "3";
+      popup.classList.remove("no-point-events");
     });
+
+    popup.addEventListener("mouseover", () => {
+      clearTimeout(timeoutId);
+      popup.style.opacity = "1";
+      popup.style.zIndex = "3";
+    });
+
     pointElement.addEventListener("mouseout", () => {
-      const popup = document.querySelector(`.${point.popupClass}`);
-      if (popup) {
+      timeoutId = setTimeout(() => {
         popup.style.opacity = "0";
         popup.style.zIndex = "1";
-      }
+        popup.classList.add("no-point-events");
+      }, 200);
+    });
+
+    popup.addEventListener("mouseout", () => {
+      timeoutId = setTimeout(() => {
+        popup.style.opacity = "0";
+        popup.style.zIndex = "1";
+        popup.classList.add("no-point-events");
+      }, 200);
     });
   }
 });
